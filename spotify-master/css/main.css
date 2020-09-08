@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url(../fonts/Circular\ Std\ Book.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Circular Std Book';
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #1DB954 !important;
+}

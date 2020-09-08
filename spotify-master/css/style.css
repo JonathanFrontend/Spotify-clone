@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Circular Std Black';
+    src: url(../fonts/Circular\ Std\ Black.ttf);
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+.main-top{
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    color: #fff;
+    position: fixed;
+    z-index: 10;
+}
+.logo-box {
+    margin-left: 15px;
+}
+.logo{
+    width: 130px;
+    fill: #ffffff;
+}
+
+.top-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* Line settings */
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+.main-top-left {
+    flex: 3;
+}
+.main-top-right {
+    flex: 7;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu {
+    display: flex;
+}
+.menu-item {
+    padding: 10px 20px;
+}
+.menu-item-link {
+    text-decoration: inherit;
+    font-weight: 600;
+    color: #ffffff;
+}
+.menu-item-link-secondary {
+    color: #d9dadc;
+}
+    .menu-item-link:hover {
+        color: #1DB954;
+    }
+.bar {
+    padding: 10px 20px;
+    font-weight: 400;
+}
+.main-bottom {
+    height: 100%;
+    width: 100%;
+    background-color: #2D46B9;
+    position: relative;
+}
+.main-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.scdn.co/i/home/lieVariants/bursts.svg);
+    background-position: 41% 4%;
+    background-repeat: no-repeat;
+    background-size: 170%;
+}
+.bottom-showcase {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 170px;
+    height: 70vh;
+}
+.showcase-text {
+    height: 480px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .showcase-text h4 {
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #1ED760;
+    }
+.one {
+    font-size: 156px;
+    font-family: 'Circular Std Black';
+    font-weight: 700;
+    /* font-size: 48px; */
+    color: #1ED760;
+    align-self: flex-start;
+    letter-spacing: -0.04em;
+}
+.one-bit {
+    display: block;
+    padding-left: 300px;
+}
+.btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 40px; 
+    background-color: #1ED760;
+    color: #2940a8;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+    .btn:hover {
+        background-color: #ffffff;
+    }
+.main-footer {
+    background: black;
+    width: 100vw;
+    padding-top: 75px;
+    min-width: 250px;
+}
+.footer-container {
+    /* Line settings */
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    height: 100%;
+}
+.footer-contents-1 {
+    width: 100%;
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
+}
+.footer-contents-2 {
+    width: 100%;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+}
+.footer-logo {
+    padding: 0;
+    flex: 1.5;
+    padding: 15px;
+}
+.footer-links {
+    flex: 5;
+    display: flex;
+    justify-content: flex-start;
+}
+    .links-title {
+        font-weight: 900;
+        color: #919496;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    .footer-links-dd {
+        margin-top: 25px;
+    }
+    .footer-links-a {
+        text-decoration: none;
+        color: #fff;
+    }
+.links-column {
+margin-top: 15px;
+padding: 0 15px;
+flex: 1;
+}
+
+.footer-sm {
+    flex: 3.5;
+    display: flex;
+}
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+    .sm-icon {
+        height: 50px;
+        width: 50px;
+        color: #fff;
+    }
+
+.footer-contents-2 {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    font-size: 12px;
+}
+.country {
+    background: #000000;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+    .country a{
+        color: #919496;
+    }
+    
+
+    .flag {
+        height: 18px;
+        margin-left: 10px;
+    }
+.bottom-links {
+    background: chocolate;
+    flex: 2;
+}
+    .bottom-links a {
+        color: #919496;
+    }
+.bottom-menu {
+    display: flex;
+    width: 100%;
+}
+.bottom-menu li:last-child {
+    align-self: flex-end;
+    color: #000;
+}
+.bottom-item {
+    margin: 10px 15px;
+}
+
+
+@media (max-width: 1300px) {
+    .main-bottom::before {
+        background-image: url(https://www.scdn.co/i/home/lieVariants/bursts-tablet.svg);
+        background-size: 153%;
+        background-position: right 40% center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .one {
+        font-size: 104px;
+        align-self: unset;
+    }
+    .one-bit {
+        padding: unset;
+    }
+}
+@media (max-width: 768px) {
+    .bottom-showcase {
+        width: 100%;
+        top: 255px;
+    }
+    .showcase-text {
+        width: 100%;
+    }
+        .showcase-text h4 {
+            font-size: 16px;
+        }
+    .one {
+        font-size: 48px;
+    }
+    .one-bit {
+        display: inline;
+    }
+}
